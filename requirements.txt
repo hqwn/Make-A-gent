@@ -1,0 +1,27 @@
+#Langchain
+langchain
+langchain-community
+python-dotenv
+
+#delete all of the requirments except your AI provider
+langchain-groq
+langchain-openai
+langchain-anthropic
+langchain-ollama
+
+
+#miscellaneous
+duckduckgo-search
+numpy
+asyncio
+
+#Voice assistant only (this is optional, so if you dont want it delete these) 
+openai-whisper
+openwakeword
+torch
+torchaudio
+silero-vad
+pyaudio
+sounddevice
+soundfile
+edge-tts
