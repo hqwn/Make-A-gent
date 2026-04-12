@@ -3,7 +3,7 @@
 ![Python](https://img.shields.io/badge/Python-3.10+-blue)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
-Hi, I built this github repository to help people make their own custom AI Agent using Python and LangChain. You won't need anything except an API key for your AI provider (Not applicable for Ollama). Now go and build your own AI Agent! For Demo scroll down.
+Hi, I built this GitHub repository to help people make their own custom AI Agent using Python and LangChain. You won't need anything except an API key for your AI provider (Not applicable for Ollama). Now go and build your own AI Agent! For Demo, scroll down.
 
 > Don't have an API Key? Follow this tutorial to get a free Groq API key: [Yt link](https://www.youtube.com/watch?v=TTG7Uo8lS1M)
 
@@ -36,7 +36,7 @@ Hi, I built this github repository to help people make their own custom AI Agent
 
 - Chat text-to-text with your agent
 
-- Chat with your agent like a voice assistant, with status update on the UI
+- Chat with your agent like a voice assistant, with status updates on the UI
 
 
 #### IF you want to see how the optional UI/voice assistant looks, scroll down (Recommended, looks cool, and is very helpful). Now you're ready to start making your AI Agent. Follow this [readme](./HowTo/AI.md) to get started.
@@ -46,7 +46,7 @@ Hi, I built this github repository to help people make their own custom AI Agent
 
 ## Optional: Voice Assistant and UI (Recommended)
 
-You start with setting up your AI Agent. Then you can set up an optional voice assistant framework for your AI Agent. You can stop there, or go even further and set up an UI for your AI Agent, personally I recommend setting it up, it looks really cool, and it's also helpful to have a UI to talk to your Agent with. If you do choose to set up the UI, you will also have to set up the Voice Assistant framework, since the UI uses the voice assistant framework to work. You won't need to do anything extra for the UI/voice assistant, except installing the requirements, and running the python file! Pictures of the UI are down below, but you do need to set up your AI Agent first before setting up the Voice Assistant and UI, so follow the [AI Agent readme](./HowTo/AI.md) first, then there will be a link on the bottom of that readme to set up the Voice Assistant and UI. UI pictures below:
+You start by setting up your AI Agent. Then you can set up an optional voice assistant framework for your AI Agent. You can stop there, or go even further and set up a UI for your AI Agent. Personally, I recommend setting it up; it looks really cool, and it's also helpful to have a UI to talk to your Agent with. If you do choose to set up the UI, you will also have to set up the Voice Assistant framework, since the UI uses the voice assistant framework to work. You won't need to do anything extra for the UI/voice assistant, except installing the requirements and running the Python file! Pictures of the UI are down below, but you do need to set up your AI Agent first before setting up the Voice Assistant and UI, so follow the [AI Agent readme](./HowTo/AI.md) first, then there will be a link at the bottom of that readme to set up the Voice Assistant and UI. UI pictures below:
 
 ![Gradio UI image](Images/Gradio1.png)
 ---
@@ -64,7 +64,7 @@ You can view a demo of this AI Agent with the UI here: https://huggingface.co/sp
 
 ### Why I Built This?
 
-I built this to give people a quick simple tutorial on how to build an AI Agent using Python and Langchain without the hassle of figuring out all the small things. This is designed to be a starting point for people who want to build their own AI Agent.
+I built this to give people a quick, simple tutorial on how to build an AI Agent using Python and Langchain without the hassle of figuring out all the small things. This is designed to be a starting point for people who want to build their own AI Agent.
 
 ### Links
 
@@ -80,7 +80,7 @@ I built this to give people a quick simple tutorial on how to build an AI Agent 
 ### Optimization
 
 
-To create a fast, efficent, and low latency AI Agent, I implemented multiple optimzations, some of which are listed below:
+To create a fast, efficient, and low-latency AI Agent, I implemented multiple optimizations, some of which are listed below:
 
 | Technique | Category | Before (Unoptimized) | After (Optimized) | Improvement |
 | :--- | :--- | :--- | :--- | :--- |
@@ -92,7 +92,7 @@ To create a fast, efficent, and low latency AI Agent, I implemented multiple opt
 
 ### Notes
 
-- I made this to help people make AI Agents, so feel free to suggest any features/improvments along with what you made with this repository on my YouTube channel or LinkedIn.
+- I made this to help people make AI Agents, so feel free to suggest any features/improvements along with what you made with this repository on my YouTube channel or LinkedIn.
 
 - Have fun building your AI Agent!
 
