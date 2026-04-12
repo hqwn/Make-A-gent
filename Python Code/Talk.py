@@ -12,6 +12,7 @@ import asyncio
 from Langchain_agent import ask_ai
 
 #model init
+status = ''
 vad_model, utils = torch.hub.load(repo_or_dir='snakers4/silero-vad', model='silero_vad')
 (get_speech_timestamps, save_audio, read_audio, VADIterator, collect_chunks) = utils
 speech_model = whisper.load_model("base.en")
@@ -82,23 +83,27 @@ async def tts(speech):
 def run_jarvis():
 
     while True:
+        global status
+
+        status = 'listening for Jarvis'
         if wake_word():
 
             #inform User that they have heard Jarvis
             print('Heard Jarvis')
+            status = 'Heard Jarvis (Say your question now)'
 
             #recognize the user's speech
             speech = speech_recognition()
             print(f'Heard: {speech}')
+            status = f'Heard {speech}, sending to AI'
 
             #Ai response
             response = ask_ai(speech)
             print('Ai: ', response)
+            status = f'AI said: {response}'
 
             #Playing the tts
             asyncio.run(tts(response))
             play_audio(r'output.mp3')
             
             model.reset()
-
-run_jarvis()

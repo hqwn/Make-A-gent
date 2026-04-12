@@ -1,6 +1,9 @@
 # Build Your Own AI Agent!
 
-Hi, I built this github repository to help people make their own custom AI Agent using Python and LangChain. You won't need anything except an API key for your AI provider (Not applicable for Ollama). Now go and build your own AI Agent!
+![Python](https://img.shields.io/badge/Python-3.10+-blue)
+![License](https://img.shields.io/badge/License-MIT-green)
+
+Hi, I built this github repository to help people make their own custom AI Agent using Python and LangChain. You won't need anything except an API key for your AI provider (Not applicable for Ollama). Now go and build your own AI Agent! For Demo scroll down.
 
 > Don't have an API Key? Follow this tutorial to get a free Groq API key: [Yt link](https://www.youtube.com/watch?v=TTG7Uo8lS1M)
 
@@ -29,9 +32,33 @@ Hi, I built this github repository to help people make their own custom AI Agent
 
 - Jarvis Wake Word (Can be customized)
 
-#### Now you're ready to start making your AI Agent. Follow this [readme](./HowTo/AI.md) to get started.
+### Optional UI's features (you will need to set up Voice Assistant too, since the UI uses the voice assistant framework):
+
+- Chat text-to-text with your agent
+
+- Chat with your agent like a voice assistant, with status update on the UI
+
+
+#### IF you want to see how the optional UI/voice assistant looks, scroll down (Recommended, looks cool, and is very helpful). Now you're ready to start making your AI Agent. Follow this [readme](./HowTo/AI.md) to get started.
 
 ---
+
+
+## Optional: Voice Assistant and UI (Recommended)
+
+You start with setting up your AI Agent. Then you can set up an optional voice assistant framework for your AI Agent. You can stop there, or go even further and set up an UI for your AI Agent, personally I recommend setting it up, it looks really cool, and it's also helpful to have a UI to talk to your Agent with. If you do choose to set up the UI, you will also have to set up the Voice Assistant framework, since the UI uses the voice assistant framework to work. You won't need to do anything extra for the UI/voice assistant, except installing the requirements, and running the python file! Pictures of the UI are down below, but you do need to set up your AI Agent first before setting up the Voice Assistant and UI, so follow the [AI Agent readme](./HowTo/AI.md) first, then there will be a link on the bottom of that readme to set up the Voice Assistant and UI. UI pictures below:
+
+![Gradio UI image](Images/Gradio1.png)
+---
+![Gradio UI image](Images/Gradio2.png)
+---
+![Gradio UI image](Images/Gradio3.png)
+---
+
+### Demo
+
+You can view a demo of this AI Agent with the UI here: https://huggingface.co/spaces/mynameisaryan/jarvis-ai-agent
+
 
 ## Notes/Extras
 
@@ -48,6 +75,20 @@ I built this to give people a quick simple tutorial on how to build an AI Agent 
 - Gmail: aryanjain9818@gmail.com
 
 - More Projects: Check my GitHub profile
+
+
+### Optimization
+
+
+To create a fast, efficent, and low latency AI Agent, I implemented multiple optimzations, some of which are listed below:
+
+| Technique | Category | Before (Unoptimized) | After (Optimized) | Improvement |
+| :--- | :--- | :--- | :--- | :--- |
+| **Inference Offloading (Groq)** | Latency / Speed | ~ 15.89 seconds | ~**2.33 seconds** | ~**85.3% Faster** |
+| **Edge-TTS Cloud Synthesis** | Memory Usage | ~2.0 GB RAM | **< 200 MB RAM** | ~**95.1% Reduction** |
+
+---
+
 
 ### Notes
 

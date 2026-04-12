@@ -7,7 +7,7 @@ Quick Overview of the tutorial:
 1. Setup
 2. Testing AI Agent
 3. Customizing your AI Agent (Changing system prompt and adding tools(step by step and quick overview))
-4. (Optional) Connecting your agent to a python script which lets you talk to it! Python file included in this repository (No extra setup/API keys needed!) 
+4. (Optional but recommended, its really cool and helpful) Connecting your agent to a python script which lets you talk to it like a voice assistant, along with a UI! Python files included in this repository (No extra setup/API keys needed!) 
 
 ## Setup
 
@@ -16,7 +16,7 @@ Before making the AI Agent, we need to set up some things. Follow the steps belo
 ### Clone the Repository using this command or download the zip file and extract it.
 
 ```bash
-git https://github.com/hqwn/Make-A-gent
+git clone https://github.com/hqwn/Make-A-gent.git
 cd Make-A-gent
 ```
 
@@ -30,7 +30,7 @@ langchain
 langchain-community
 python-dotenv
 
-#delete all of the requirements except your AI provider
+#delete all of the requirments except your AI provider
 langchain-groq
 langchain-openai
 langchain-anthropic
@@ -39,16 +39,7 @@ langchain-ollama
 
 #miscellaneous
 duckduckgo-search
-openai-whisper
-openwakeword
-torch
-torchaudio
-silero-vad
-pyaudio
-sounddevice
-soundfile
 numpy
-edge-tts
 asyncio
 ```
 
@@ -69,23 +60,7 @@ langchain-groq
 
 ```
 
-Find that part of the requirements.txt file and delete the providers according to your personal use. Now if you don't want to add the voice assistant feature with your agent, you can also delete all of the dependencies needed only for the voice assistant listed under # Only of voice assistant, which are these:
-
-```bash
-#Voice assistant only (this is optional, so if you dont want it delete these) 
-openai-whisper
-openwakeword
-torch
-torchaudio
-silero-vad
-pyaudio
-sounddevice
-soundfile
-edge-tts
-```
-
-
-**So delete all of the ones above if you **don't** want to have the voice assistant feature**. Now install all of the dependencies with pip using this command:
+Find that part of the requirements.txt file and delete the providers according to your personal use. Now install all of the dependencies needed with pip using this command:
 
 ```bash
 pip install -r requirements.txt
@@ -93,11 +68,25 @@ pip install -r requirements.txt
 
 ### Set up your API key (Skip if using Ollama as provider)
 
-Now we're done with the basic setup. If you're using Ollama, you won't need an API key, so you can skip this step. Now navigate to the .env file and add your api_key to the YOUR_API_KEY variable. It should look like this:
+Now we're done with the basic setup. If you're using Ollama, you won't need an API key, so you can skip this step. Now create your .env by copying .env.example file by running this:
+
+```bash
+cp .env.example .env
+```
+
+If that does't work on windows, try this:
+
+```bash
+copy .env.example .env
+```
+
+Then open your new .env file and change the YOUR_API_KEY value to your API key, it should look like this:
 
 ```python
-YOUR_API_KEY=xxxxxx_your_api_key_xxxx
+YOUR_API_KEY=your_api_key_goes_here
 ```
+
+> Important: Never ever commit your .env file or make it public, since it contains sensitive information
 
 ### Final Setup Step, Pick your provider in LangchainAgent.py
 
@@ -374,4 +363,4 @@ Now I asked my AI Agent for the current time, and it responsded with:
 
 ---
 
-## Now you know how to customize and make an AI Agent! But there's More! You can also connect your AI Agent to a python script which let's you talk to it using your microphone, and it will talk back to you! This is optional, but if you want to set it up, follow this [readme](Voice_Assistant.md) to set up the voice assistant framework for your AI Agent! This is included in this repository.
+## Now you know how to customize and make an AI Agent! But there's More! You can also connect your AI Agent to a python script which let's you talk to it using your microphone, and it will talk back to you + a cool looking UI where you can talk to it with the voice assistant framework or talk to it text-to-text! This is optional, but if you want to set it up, which you should, follow this [readme](Voice_Assistant.md) to set up the voice assistant framework for your AI Agent along with the UI! This is included in this repository.

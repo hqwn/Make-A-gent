@@ -1,0 +1,11 @@
+# For Voice assistant/UI only 
+gradio
+openai-whisper
+openwakeword
+torch
+torchaudio
+silero-vad
+pyaudio
+sounddevice
+soundfile
+edge-tts

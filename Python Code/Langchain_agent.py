@@ -72,8 +72,18 @@ def ask_ai(prompt):
     chat_history.append({'role': 'assistant', 'content': result["messages"][-1].content})
     return result["messages"][-1].content
 
+#Only use if using Gradio for UI, if you aren't then don't worry about this
+def ask_ai_gradio(prompt, history):
+    actual_history = []
+    for i in history:
+        actual_history.append({'role': i['role'], 'content': i['content'][0]['text']})
 
-# Uncomment this if you dont want to interact with your agent like an AI assitant, or just want to test your agent out! 
+    actual_history.append({'role': 'user', 'content': prompt})
+    result = agent.invoke({"messages": actual_history}, config={"recursion_limit": 30})
+    return result["messages"][-1].content
+
+
+# Uncomment the code below if you dont want to interact with your agent like an AI assitant, but rather with the terminal in a chat format, or just want to test your agent out! 
 # while True:
 #     prompt = input('Write a question to your new AI Agent: ')
 #     result = ask_ai(prompt)
