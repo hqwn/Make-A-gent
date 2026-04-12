@@ -9,6 +9,11 @@ Hi, I built this GitHub repository to help people make their own custom AI Agent
 
 ---
 
+## Youtube Tutorial
+
+If at any time something is confusing to you, or you want a quick YouTube tutorial on how to set this up, you can watch: https://youtu.be/mCsRr_MMr7w
+
+
 ## Quick Overview of Features
 
 
