@@ -363,4 +363,4 @@ Now I asked my AI Agent for the current time, and it responsded with:
 
 ---
 
-## Now you know how to customize and make an AI Agent! But there's More! You can also connect your AI Agent to a python script which let's you talk to it using your microphone, and it will talk back to you + a cool looking UI where you can talk to it with the voice assistant framework or talk to it text-to-text! This is optional, but if you want to set it up, which you should, follow this [readme](Voice_Assistant.md) to set up the voice assistant framework for your AI Agent along with the UI! This is included in this repository.
+## Now you know how to customize and make an AI Agent! But there's More! You can also connect your AI Agent to a python script which let's you talk to it using your microphone, and it will talk back to you + a cool looking UI where you can talk to it with the voice assistant framework or talk to it text-to-text! This is optional, but if you want to set it up, which you should, follow this [readme](Voice_assistant.md) to set up the voice assistant framework for your AI Agent along with the UI! This is included in this repository.
