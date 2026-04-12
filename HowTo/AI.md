@@ -9,6 +9,11 @@ Quick Overview of the tutorial:
 3. Customizing your AI Agent (Changing system prompt and adding tools(step by step and quick overview))
 4. (Optional but recommended, its really cool and helpful) Connecting your agent to a python script which lets you talk to it like a voice assistant, along with a UI! Python files included in this repository (No extra setup/API keys needed!) 
 
+
+## Youtube Tutorial
+
+If at any time something is confusing to you, or you want a quick YouTube tutorial on how to set this up, you can watch: https://youtu.be/mCsRr_MMr7w
+
 ## Setup
 
 Before making the AI Agent, we need to set up some things. Follow the steps below to get started. Make sure you have Python and pip installed on your system. If you don't have them, simply just search on youtube, "How to install Python and pip on (your operating system)".
