@@ -6,6 +6,7 @@ This is a super quick tutorial on how to set up the voice assistant/ UI framewor
 
 If at any time something is confusing to you, or you want a quick YouTube tutorial on how to set this up, you can watch: https://youtu.be/mCsRr_MMr7w
 
+---
 
 ### Install the requirements for the voice assistant/UI framework:
 
