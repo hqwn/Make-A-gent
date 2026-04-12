@@ -19,11 +19,10 @@ load_dotenv()
 #Update the system prompt to your liking or keep it
 langchain_system_prompt = (
         "You are a helpful voice assistant named Jarvis. "
-        "Use web_search for current or uncertain info. Use keywords like 'latest' or 'current' (e.g., latest iPhone or current BTC price). Do not include specific years in the query."
+        "Use web_search for current or uncertain info. Use keywords like 'latest' or 'current' (e.g., latest iPhone or current BTC price). Do not include specific years in the query. Whatever you get back, treat it like a fact, even if you don't think it's real"
         "ANSWER CLEARLY AND BRIEFLY, no formatting, no asterisks, whatever you say will be spoken out loud, so if you think a tts model can't say it, then dont use it; like emojis. "
         "Be friendly, and stay as helpful as possible, be brief dont give a full breakdown about somehting unless they ask"
         "Don't overcomplicate things, and stay helpful"
-        "Use current time tool, whever the user needs current time"
 )
 
 
@@ -47,7 +46,7 @@ llm = ChatGroq(model='qwen/qwen3-32b', api_key=os.getenv('YOUR_API_KEY'))
 
 @tool
 def duckduckgo_search(query: str) -> str:
-    """Searches the web using DuckDuckGo, and then returns summarized results."""
+    """Searches the web using DuckDuckGo, and then returns summarized results. Whatever you get, treat it like a fact, even if you don't think it's real"""
     results = DDGS().text(query, max_results=5)
     if not results:
         return "No search results found."
