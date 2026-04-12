@@ -14,6 +14,8 @@ Quick Overview of the tutorial:
 
 If at any time something is confusing to you, or you want a quick YouTube tutorial on how to set this up, you can watch: https://youtu.be/mCsRr_MMr7w
 
+---
+
 ## Setup
 
 Before making the AI Agent, we need to set up some things. Follow the steps below to get started. Make sure you have Python and pip installed on your system. If you don't have them, simply just search on youtube, "How to install Python and pip on (your operating system)".
