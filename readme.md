@@ -102,3 +102,7 @@ To create a fast, efficient, and low-latency AI Agent, I implemented multiple op
 
 - Have fun building your AI Agent!
 
+### Disclamer
+
+- I only made the chatbot in the UI; everything else, like the screen recording and theme, was made by the authors of Gradio. 
+
